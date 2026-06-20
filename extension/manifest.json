@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "CareerLens",
+  "version": "1.0",
+  "description": "Detects potentially fake job postings.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/jobs/*",
+        "https://*.indeed.com/*",
+        "https://*.naukri.com/*",
+        "https://*.glassdoor.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
