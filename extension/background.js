@@ -1,3 +1,7 @@
-chrome.runtime.onInstalled.addListener(() => {
-    console.log("Fake Job Detector Installed");
+chrome.runtime.onInstalled.addListener(async () => {
+
+    await chrome.sidePanel.setPanelBehavior({
+        openPanelOnActionClick: true
+    });
+
 });

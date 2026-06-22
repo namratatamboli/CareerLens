@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerLens</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <div class="logo">
+
+            <span class="material-symbols-outlined">
+                verified_user
+            </span>
+
+            <div>
+
+                <h1>CareerLens</h1>
+                <p>AI Job Verification</p>
+
+            </div>
+
+        </div>
+
+        <button id="analyzeBtn">
+
+            <span class="material-symbols-outlined">
+                refresh
+            </span>
+
+            Analyze
+
+        </button>
+
+    </header>
+
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <span class="material-symbols-outlined">
+                description
+            </span>
+
+            <h3>Job Summary</h3>
+
+        </div>
+
+        <div class="info-row">
+            <span>Role</span>
+            <strong id="jobTitle">Waiting...</strong>
+        </div>
+
+        <div class="info-row">
+            <span>Company</span>
+            <strong id="company">--</strong>
+        </div>
+
+        <div class="info-row">
+            <span>Website</span>
+            <strong id="domain">--</strong>
+        </div>
+
+    </section>
+
+
+
+    <section class="card score-card">
+
+        <h3>Fraud Score</h3>
+
+        <div class="score-ring">
+
+            <div class="inner-score">
+
+                <span id="score">0</span>
+
+                <small>/100</small>
+
+            </div>
+
+        </div>
+
+        <span id="riskBadge" class="badge low">
+
+            Low Risk
+
+        </span>
+
+    </section>
+
+
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <span class="material-symbols-outlined">
+                warning
+            </span>
+
+            <h3>Risk Indicators</h3>
+
+        </div>
+
+        <ul id="reasonList">
+
+            <li>No analysis yet.</li>
+
+        </ul>
+
+    </section>
+
+
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <span class="material-symbols-outlined">
+                tips_and_updates
+            </span>
+
+            <h3>Recommendations</h3>
+
+        </div>
+
+        <ul>
+
+            <li>Verify company website.</li>
+
+            <li>Check recruiter profile.</li>
+
+            <li>Avoid paying application fees.</li>
+
+        </ul>
+
+    </section>
+
+
+
+    <section class="card">
+
+        <div class="section-title">
+
+            <span class="material-symbols-outlined">
+                analytics
+            </span>
+
+            <h3>Analysis Details</h3>
+
+        </div>
+
+        <div class="info-row">
+
+            <span>Engine</span>
+
+            <strong>Rule Engine v1</strong>
+
+        </div>
+
+        <div class="info-row">
+
+            <span>Status</span>
+
+            <strong>Ready</strong>
+
+        </div>
+
+        <div class="info-row">
+
+            <span>Backend</span>
+
+            <strong>Flask API</strong>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        CareerLens v1.0
+
+    </footer>
+
+</div>
+
+<script src="sidepanel.js"></script>
+
+</body>
+
+</html>
